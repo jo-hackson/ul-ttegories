@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  background-color: #E6E6FA;
+  padding: 10px;
+  width: 90%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#letter {
+  font-size: 50px;
+  margin: auto;
+  display: block;
+  font-family: 'Abril Fatface', cursive;
+}
+
+input {
+  margin-bottom: 100px;
+}
