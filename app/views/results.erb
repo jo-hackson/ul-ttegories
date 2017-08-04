@@ -2,5 +2,7 @@
 
 
 <div class="results">
-	<%= erb :'/_individual_results' %>
+	<% @results.each do |result| 
+		<%= erb :'/_individual_results' %>
+	<% end %>
 </div>
