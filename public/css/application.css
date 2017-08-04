@@ -2,20 +2,66 @@
   display: none;
 }
 
+
 .container {
   background-color: #E6E6FA;
   padding: 10px;
-  width: 90%;
+  width: 95%;
   font-family: 'Quicksand', sans-serif;
 }
 
-#letter {
-  font-size: 50px;
-  margin: auto;
-  display: block;
-  font-family: 'Abril Fatface', cursive;
+.container p { 
+  display: inline 
 }
 
-input {
-  margin-bottom: 100px;
+
+div.left {
+  font-family: 'Abril Fatface', cursive;
+  
+  /*height: 300px;*/
+  margin: auto;
 }
+
+
+#letter {
+  height: 300px;
+  display: table-cell; 
+  vertical-align: bottom;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 5px;
+  font-size: 100px;
+}
+
+
+#count {
+  font-size: 80px;
+  vertical-align: top;
+}
+
+
+#play-time {
+  margin: auto;
+  padding: 30px;
+}
+
+
+input.user-input {
+  width: 360px;
+  margin-bottom: 32px;
+  padding: 12px;
+  font-size: 18px;
+}
+
+
+li.category {
+  font-size: 26px;
+  margin-bottom: 50px;
+  text-align: right;
+  list-style: none;
+}
+
+
+/* vertical align */
+/*  line-height: 200px;
+  white-space: nowrap;*/

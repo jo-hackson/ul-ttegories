@@ -3,33 +3,47 @@
 <!-- countdown -->
 <div class="container">
 
-  <div class="col-lg-3 col-md-3 col-sm-3">
+  <div class="left col-lg-3 col-md-3 col-sm-3">
     <span id="letter"><%= @letter %></span>
     <span id="count" class="hidden">120</span>
-    <i id="play-time" class="fa fa-play fa-2x" aria-hidden="true"></i>
+    <i id="play-time" class="fa fa-play fa-4x" aria-hidden="true"></i>
     <!-- <i id="pause-time" class="fa fa-pause fa-2x hidden" aria-hidden="true"></i> -->
   </div>
 
-  <div class="col-lg-5 col-md-5 col-sm-5">
+  <div class="col-lg-4 col-md-4 col-sm-4">
     <ol>
       <% @categories.each do |category| %>
-        <li><%= category %></li><br>
+        <li class="category"><%= category %></li>
       <% end %>
     </ol>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4">
-    <form id="game">
-      <input type="text" id="1"><br>
-      <input type="text" id="2"><br>
-      <input type="text" id="3"><br>
-      <input type="text" id="4"><br>
-      <input type="text" id="5"><br>
-      <input type="text" id="6"><br>
-      <input type="text" id="7"><br>
-      <input type="text" id="8"><br>
-      <input type="text" id="9"><br>
-      <input type="text" id="10"><br>
+  <div class="col-lg-5 col-md-5 col-sm-5">
+    <form class="hidden" id="game" action="/results" method="post">
+      <input type="text" name="1" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="2" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="3" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="4" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="5" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="6" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="7" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="8" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="9" class="user-input">
+          <p class="points"> </p>
+      <input type="text" name="10" class="user-input">
+          <p class="points"> </p>
     </form>
   </div>
+</div>
+
+<div class="results">
+
 </div>
