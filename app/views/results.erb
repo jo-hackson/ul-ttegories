@@ -1,1 +1,8 @@
 <h1>Congrats, you are the only player so you got all your points</h1>
+
+
+<div class="results">
+	<% @results.each do |result| 
+		<%= erb :'/_individual_results' %>
+	<% end %>
+</div>
