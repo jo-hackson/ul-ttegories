@@ -17,8 +17,7 @@
 
 div.left {
   font-family: 'Abril Fatface', cursive;
-  
-  /*height: 300px;*/
+    /*height: 300px;*/
   margin: auto;
 }
 
@@ -61,6 +60,27 @@ li.category {
   list-style: none;
 }
 
+nav.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #FFE4C4;
+}
+
+button {
+  border-color: #27496d;
+  color: #27496d;
+  border-radius: 25px;
+  background-color: white;
+}
+
+/*a.nav-text {
+  font-size: 20px;
+  color: #FFE4C4;
+}*/
+
+#fb-btn {
+  margin-top: 15px;
+}
 
 /* vertical align */
 /*  line-height: 200px;

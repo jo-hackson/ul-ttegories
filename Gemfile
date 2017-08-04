@@ -12,7 +12,7 @@ gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 gem 'faker', github: 'stympy/faker'
 gem 'rake'
-
+gem 'bcrypt'
 gem 'rack', '1.5.2'
 gem 'shotgun'
 
