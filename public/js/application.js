@@ -68,5 +68,27 @@ $(document).ready(function() {
   });
 
 
+  $("form.login").on("click", "button.login", function(event){
+    event.preventDefault();
+    var $button = $(this);
+    var $form = $(this).parent();
+    console.log("boom");
+    $.ajax({
+      url: $form.attr('action'),
+      method: $form.attr('method')
+    })
+    .done(function(response){
+      console.log(response)
+      $form.append(response)
+      $button.addClass('hidden');
+    })
+    .fail(function(){
+      console.log("fail inside form login")
+    })
+    .always(function(){
+      console.log("moo inside login button")
+    })
+  });
+
 
 });

@@ -1,6 +1,30 @@
-<h2>do you want to login with Facebook and remember your stats and whatever awesome cool features I can think of by the end of the day?</h2>
 
-<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+<h2>do you want to:</h2>
 
-<h2>or just want to mooch as a guest?</h2>
-<p>I will stay as <a href="/game">guest</a> but I know I am missing out.</p>
+<div class="col-md-5">
+	<h3 id="fb-heading">login with Facebook and remember your stats and whatever awesome cool features I can think of by the end of the day?</h3>
+
+    <fb:login-button id="fb-btn" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();" scope="public_profile"></fb:login-button>
+
+    <form action="/users/register" method="get">
+    	<button type="submit">sign up</button>
+    </form>
+
+    <div id="status">
+	</div>
+
+
+    <form class="login" action="/users/login" method="get">
+    	<button class="login" type="submit">login</button>
+    </form>
+	
+</div>
+
+<div class="col-md-2">
+	<p>or</p>
+</div>
+
+<div class="col-md-5">
+	<h3>or just want to mooch as a guest?</h3>
+	<p>I will stay as <a href="/game">guest</a> but I know I am missing out.</p>
+</div>

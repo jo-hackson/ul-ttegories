@@ -5,5 +5,6 @@ class CreateResults < ActiveRecord::Migration
   		t.integer		:player_id
 
   		t.timestamps
+  	end
   end
 end
